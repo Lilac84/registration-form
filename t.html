@@ -34,7 +34,7 @@ function check(){
 if(pswrd_1.value != pswrd_2.value){
 errorText.style.display = "block";
 errorText.classList.remove("matched");
-errorText.textContent = "Error! Confirm Password Not Match";
+errorText.textContent = "Confirm Password Not Match";
  return false;
 }
 else{
@@ -44,10 +44,7 @@ errorText.textContent = " Confirm Password Matched";
  return false;
    }
  }
-const alertMessage = document.createElement('div');
-alertMessage.innerText = "The Form has been sucessfully submitted";
-alertMessage.classList.add('alert', 'alert-success');
-event.target.prepend(alertMessage);  
+alertMessage.innerText = "Successful registration";
 </script>
 </body>
 </html>
